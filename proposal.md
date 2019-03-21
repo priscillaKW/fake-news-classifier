@@ -11,9 +11,9 @@ Como irei iniciar um projeto que envolve NLP no meu trabalho, esse desafio é ó
 
 
 ### Descrição do problema
-_(aprox. 1 parágrafo)_
 
-Nesta seção, descreva claramente o problema a ser resolvido. O problema descrito deve ser bem definido e ter pelo menos uma solução possível. Descreva o problema detalhadamente, de forma que fique claro que o problema é quantificável (pode ser expresso em termos matemáticos ou lógicos), mensurável (pode ser medido por uma métrica e claramente observado), e replicável (pode ser reproduzido e ocorre mais de uma vez).
+O objetivo desse desafio é auxiliar na classificação de notícias confiáveis e não confiáveis através de algoritmos de Machine Learning. Os algoritmos que serão utilizados serão comparados entre si a fim de determinar qual possui maior acurácia para resolver o problema descrito acima. A solução poderá ser comparada com os primeiros vencedores da competição do kaggle.
+
 
 ### Conjuntos de dados e entradas
 _(aprox. 2-3 parágrafos)_
