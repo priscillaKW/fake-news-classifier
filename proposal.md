@@ -24,31 +24,52 @@ O conjunto de dados consiste de notícias obtidas durante o último período ele
 
 ### Descrição da solução
 
-Dado que o problema envolve análise de texto, a solução utilizará técnicas de NLP (Natural Language Processing). A solução utilizará algoritmos de aprendizagem supervisionada, dado que o conjunto de dados é rotulado. Os algoritmos que serão analisados para encontrar a melhor solução, serão: AdaBoost, RandomForest e Regressão Logística. A análise da solução será feita utilizando métricas padrão de análise de algoritmos supervisinados como: acurácia, precision, recall, f1-score. 
+Dado que o problema envolve análise de texto, a solução utilizará técnicas de NLP (Natural Language Processing). A solução utilizará algoritmos de aprendizagem supervisionada, dado que o conjunto de dados é rotulado. A análise da solução será feita utilizando métricas padrão de análise de algoritmos supervisinados como: acurácia, precision, recall, f1-score. 
 
 
 ### Modelo de referência (benchmark)
-_(aproximadamente 1-2 parágrafos)_
 
-Até o 7 do leaderboard público.
-
-Nesta seção, forneça os detalhes de um modelo ou resultado de referência que esteja relacionado ao assunto, definição do problema e solução proposta. Idealmente, o resultado ou modelo de referência contextualiza os métodos existentes ou informações conhecidas sobre o assunto e problema propostos, que podem então ser objetivamente comparados à solução. Descreva detalhadamente como o resultado ou modelo de referência é mensurável (pode ser medido por alguma métrica e claramente observado).
+Como benchmark serão consideradas as implementações apresentadas no primeiro kernel do desafio no Kaggle, pelo Paul Larmuseau. Nessa implementação, alguns algoritmos foram sugeridos como possíveis soluções para o problema. Dentre eles, se destacaram: Árvore de Decisão (95% de acurácia) e Regressão Logística (98% de acurácia). O melhor modelo utilizou Regressão Logística regular.
 
 
 ### Métricas de avaliação
 
-A principal métrica para avaliação será a acurácia (quanto maior, melhor), pois foi a métrica escolhida para avaliação da competição do kaggle. Os 2 melhores resultados apresentados no leaderboard público da competição do kaggle, utilizados como benchmark, possuem uma acurácia de 0.98. Como o objetivo no kaggle é ganhar na pontuação com pequenas mudanças no placar, vamos nos concentrar em obter um modelo com, no mínimo, 0.9 de acurácia, o que me colocaria na posição 8 do placar.
+A principal métrica para avaliação será a acurácia (quanto maior, melhor), pois foi a métrica escolhida para avaliação da competição do kaggle. Os 2 melhores resultados apresentados no leaderboard público da competição do kaggle, possuem uma acurácia de 0.98. Como o objetivo no kaggle é ganhar na pontuação com pequenas mudanças no placar, vamos nos concentrar em obter um modelo com, no mínimo, 0.9 de acurácia, o que me colocaria na posição 8 do placar. O benchmark utilizado, atingiu acurácia de 98% no melhor modelo implementado; e 78% no pior modelo.
 A acurácia é calculada pela equação abaixo:
 
-$$
-accuracy = \frac{correct predictions}{correct predictions + incorrect predictions}
-$$
+![](http://www.sciweavers.org/tex2img.php?eq=accuracy%20%3D%20%5Cfrac%7Bcorrect%20predictions%7D%7Bcorrect%20predictions%20%2B%20incorrect%20predictions%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-Além da acurácia, outras métricas serão consideradas: precision (quantas notícias preditas como confiáveis são realmente confiáveis), recall(quantas notícias confiáveis foram preditas como confiáveis) e f1-score (média harmônica entre precision e recall).
+Além da acurácia, outras métricas serão consideradas (mas não comparadas ao benchmark): precision (quantas notícias preditas como confiáveis são realmente confiáveis), recall(quantas notícias confiáveis foram preditas como confiáveis), f1-score (média harmônica entre precision e recall), curva ROC e KS.
 
 
 ### Design do projeto
 _(aprox. 1 página)_
+
+O projeto será desenvolvido em 6 etapas:
+
+1. Análise exploratória de dados
+2. Pré-processamento e feature engineering
+3. Treinamento dos modelos
+4. Validação dos modelos
+5. Comparação dos resultados dos modelos 
+6. Entendimento e escolha do melhor modelo
+
+#### 1. Análise exploratória de dados
+
+#### 2. Feature engineering
+
+#### 3. Treinamento dos modelos
+
+Os algoritmos que serão analisados para encontrar a melhor solução, serão: AdaBoost, RandomForest e Regressão Logística com otimização L2. 
+
+#### 4. Validação dos modelos
+
+#### 5. Comparação dos resultados dos modelos 
+
+#### 6. Entendimento e escolha do melhor modelo
+
+
+
 
 Nesta seção final, sintetize um fluxo de trabalho teórico para obtenção de uma solução para o problema em questão. Discuta detalhadamente quais estratégias você considera utilizar, quais análises de dados podem ser necessárias de antemão e quais algoritmos serão considerados na sua implementação. O fluxo de trabalho e discussão propostos devem estar alinhados com as seções anteriores. Adicionalmente, você poderá incluir pequenas visualizações, pseudocódigo ou diagramas para auxiliar na descrição do design do projeto, mas não é obrigatório. A discussão deve seguir claramente o fluxo de trabalho proposto para o projeto de conclusão.
 
