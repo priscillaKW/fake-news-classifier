@@ -56,11 +56,16 @@ O projeto será desenvolvido em 6 etapas:
 
 #### 1. Análise exploratória de dados
 
+Nessa etapa, faremos uma análise inicial dos textos das notícias, a fim de obter um melhor esclarescimento sobre os dados e como realizar o pré-processamento na pŕoxima etapa.
+
 #### 2. Feature engineering
+
+
+
 
 #### 3. Treinamento dos modelos
 
-Os algoritmos que serão analisados para encontrar a melhor solução, serão: AdaBoost, RandomForest e Regressão Logística com otimização L2. 
+Os algoritmos que serão analisados para encontrar a melhor solução, serão: AdaBoost, RandomForest, SVM com kernel RBF e Regressão Logística com otimização L2. 
 
 #### 4. Validação dos modelos
 
