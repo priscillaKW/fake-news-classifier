@@ -43,16 +43,14 @@ Além da acurácia, outras métricas serão consideradas (mas não comparadas ao
 
 
 ### Design do projeto
-_(aprox. 1 página)_
 
 O projeto será desenvolvido em 6 etapas:
 
 1. Análise exploratória de dados
 2. Pré-processamento e feature engineering
 3. Treinamento dos modelos
-4. Validação dos modelos
-5. Comparação dos resultados dos modelos 
-6. Entendimento e escolha do melhor modelo
+4. Validação e comparação dos resultados dos modelos
+5. Entendimento e escolha do melhor modelo
 
 #### 1. Análise exploratória de dados
 
@@ -60,35 +58,16 @@ Nessa etapa, faremos uma análise inicial dos textos das notícias, a fim de obt
 
 #### 2. Feature engineering
 
-
-
+Nesta etapa, aplicaremos técnicas de processamento de texto, como Bag of Words ou TF-IDF. Além disso, podemos aplicar PCA após o processamento de texto, a fim de diminuir a quantidade de variáveis.
 
 #### 3. Treinamento dos modelos
 
-Os algoritmos que serão analisados para encontrar a melhor solução, serão: AdaBoost, RandomForest, SVM com kernel RBF e Regressão Logística com otimização L2. 
+Como é um problema de classificação, os algoritmos aplicados serão de aprendizagem supervisionada. Serão aplicados e analisados 4 algoritmos, para encontrar a melhor solução: AdaBoost, RandomForest, SVM com kernel RBF e Regressão Logística com otimização L2. 
 
-#### 4. Validação dos modelos
+#### 4. Validação e comparação dos resultados dos modelos
 
-#### 5. Comparação dos resultados dos modelos 
+A principal métrica para validação será a acurácia, pois foi a métrica escolhida para avaliação da competição no kaggle. Além da acurácia, outras métricas serão consideradas (mas não comparadas ao benchmark): precision, recall, f1-score, curva ROC e KS. Essas métricas serão utilizadas para comparar os modelos desenvolvidos.
 
-#### 6. Entendimento e escolha do melhor modelo
+#### 5. Entendimento e escolha do melhor modelo
 
-
-
-
-Nesta seção final, sintetize um fluxo de trabalho teórico para obtenção de uma solução para o problema em questão. Discuta detalhadamente quais estratégias você considera utilizar, quais análises de dados podem ser necessárias de antemão e quais algoritmos serão considerados na sua implementação. O fluxo de trabalho e discussão propostos devem estar alinhados com as seções anteriores. Adicionalmente, você poderá incluir pequenas visualizações, pseudocódigo ou diagramas para auxiliar na descrição do design do projeto, mas não é obrigatório. A discussão deve seguir claramente o fluxo de trabalho proposto para o projeto de conclusão.
-
------------
-
-**Antes de enviar sua proposta, pergunte-se. . .**
-
-- A proposta que você escreveu segue uma estrutura bem organizada, similar ao modelo de projeto?
-- Todas as seções (em especial, **Descrição da solução** e **Design do projeto**) estão escritas de uma forma clara, concisa e específica? Existe algum termo ou frase ambígua que precise de esclarecimento?
-- O público-alvo de seu projeto será capaz de entender sua proposta?
-- Você revisou sua proposta de projeto adequadamente, de forma a minimizar a quantidade de erros gramaticais e ortográficos?
-- Todos os recursos usados neste projeto foram corretamente citados e referenciados?
-
-
-
-
-http://qwone.com/~jason/20Newsgroups/
+A seleção do modelo será feita baseada no resultado da comparação das métricas descritas na sessão anterior. O modelo que apresentar a performance que mais se aproxima da solução ideal para o problema será escolhido. 
