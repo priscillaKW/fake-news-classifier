@@ -1,0 +1,15 @@
+Accuracy of the svm on test set: 0.520
+              precision    recall  f1-score   support
+
+           0       0.52      1.00      0.68      3176
+           1       0.00      0.00      0.00      2926
+
+   micro avg       0.52      0.52      0.52      6102
+   macro avg       0.26      0.50      0.34      6102
+weighted avg       0.27      0.52      0.36      6102
+
+F-score: 0.0
+AUC: nan
+                       Real Não Confiável  Real Confiável
+Predict Não Confiável                3176               0
+Predict Confiável                    2926               0

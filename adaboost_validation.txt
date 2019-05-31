@@ -1,0 +1,15 @@
+Accuracy of the adaboost on test set: 0.960
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96      3176
+           1       0.96      0.96      0.96      2926
+
+   micro avg       0.96      0.96      0.96      6102
+   macro avg       0.96      0.96      0.96      6102
+weighted avg       0.96      0.96      0.96      6102
+
+F-score: 0.9579774513153398
+AUC: 0.9596064850682285
+                       Real Não Confiável  Real Confiável
+Predict Não Confiável                3052             124
+Predict Confiável                     122            2804

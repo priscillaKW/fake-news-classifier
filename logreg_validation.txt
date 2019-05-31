@@ -1,0 +1,15 @@
+Accuracy of the logreg on test set: 0.937
+              precision    recall  f1-score   support
+
+           0       0.95      0.92      0.94      3176
+           1       0.92      0.95      0.93      2926
+
+   micro avg       0.94      0.94      0.94      6102
+   macro avg       0.94      0.94      0.94      6102
+weighted avg       0.94      0.94      0.94      6102
+
+F-score: 0.9349251723558096
+AUC: 0.9364189395426433
+                       Real Não Confiável  Real Confiável
+Predict Não Confiável                2935             241
+Predict Confiável                     146            2780
